@@ -1,0 +1,7 @@
+ignoredBuiltDependencies:
+  - bufferutil
+  - es5-ext
+  - swiper
+  - utf-8-validate
+onlyBuiltDependencies:
+  - '@parcel/watcher'
