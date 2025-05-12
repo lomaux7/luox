@@ -18,6 +18,7 @@
 #}
 {% extends "layouts.master" %}
 {% block content %}
+
     <div class="container px-2.5 ms:px-5 mb-10">
         {# add breadcumbs container in pages to make a space in case breadcrumbs is off #}
         <nav class="breadcrumbs w-full py-5">
@@ -39,7 +40,7 @@
                                 <i class="sicon-filter text-gray-text text-2xl me-2.5"></i>
                             </a>
                         {% endif %}
-                        {% if sort_options|length %}
+                        {# {% if sort_options|length %}
                             <div class="flex items-center">
                                 <label class="hidden sm:block rtl:ml-3 ltr:mr-3 whitespace-nowrap"
                                        for="product-filter">{{ trans('pages.categories.sorting') }}</label>
@@ -49,7 +50,7 @@
                                     {% endfor %}
                                 </select>
                             </div>
-                        {% endif %}
+                        {% endif %} #}
                     </div>
 
                 </div>
