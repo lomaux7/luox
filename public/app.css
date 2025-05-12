@@ -1,6 +1,11 @@
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/.pnpm/css-loader@6.11.0_webpack@5.98.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/.pnpm/postcss-loader@7.3.4_postcs_4b6991251e01532d1de1b949ae4ce16c/node_modules/postcss-loader/dist/cjs.js!./node_modules/.pnpm/sass-loader@13.3.3_sass@1.85.1_webpack@5.98.0/node_modules/sass-loader/dist/cjs.js!./src/assets/styles/app.scss ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500;700;900&display=swap);
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/css-loader@6.11.0_webpack@5.98.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/.pnpm/postcss-loader@7.3.4_postcs_4b6991251e01532d1de1b949ae4ce16c/node_modules/postcss-loader/dist/cjs.js!./node_modules/.pnpm/sass-loader@13.3.3_sass@1.85.1_webpack@5.98.0/node_modules/sass-loader/dist/cjs.js!./src/assets/styles/app.scss (1) ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
 /*
  * IMPORTANT NOTE: Theme based on Tailwindcss but for the purpose of simplifing the DOM we use
  * tailwind classes with @apply directive in the SCSS files
@@ -631,7 +636,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}
 .grid-cols-\[repeat\(2\2c minmax\(0\2c 1fr\)\)\]{grid-template-columns:repeat(2,minmax(0,1fr))}
 .flex-row{flex-direction:row}
-.flex-row-reverse{flex-direction:row-reverse}
 .flex-col{flex-direction:column}
 .flex-wrap{flex-wrap:wrap}
 .items-start{align-items:flex-start}
@@ -948,7 +952,28 @@ textarea.s-input{height:6rem}
 .s-advertisement-content{width:100%;margin-right:auto;margin-left:auto;padding-right:10px;padding-left:10px}
 @media (min-width: 1280px){
 .s-advertisement-content{max-width:1280px}}
-.s-advertisement-content{display:flex;align-items:center;justify-content:space-between;padding-top:0.625rem;padding-bottom:0.625rem}
+.s-advertisement-content{display:flex;align-items:center;justify-content:space-between;padding-top:0.625rem;padding-bottom:0.625rem;
+  width: 80%;
+  margin: 0 auto}
+.hero .s-advertisement-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.about .s-advertisement-content {
+  display: flex;
+  justify-content: space-between;
+}
+.stand .s-advertisement-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 @media only screen and (min-width: 1024px) {
   .main-menu .sub-menu li.mega-menu .s-advertisement-content ul{margin:0px;border-style:none;padding:0px}
   .main-menu .sub-menu li.mega-menu .s-advertisement-content > div{display:none}
@@ -2951,6 +2976,17 @@ input[type=radio].sr-only:checked ~ div.s-quick-order-expandable .s-form-group >
 .s-rating-modal-thanks-btn.btn:disabled{cursor:default;border-width:1px;--tw-border-opacity:1;border-color:rgba(229, 231, 235, 1);border-color:rgba(229, 231, 235, var(--tw-border-opacity, 1));background-color:transparent;--tw-text-opacity:1;color:rgba(209, 213, 219, 1);color:rgba(209, 213, 219, var(--tw-text-opacity, 1));--tw-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 0 1px 2px 0 rgba(0, 0, 0, 0.05);box-shadow:var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow)}
 .s-rating-modal-thanks-btn.btn:disabled:hover{background-color:transparent}
 .s-rating-modal-thanks-btn:disabled .s-button-text{opacity:0.7}
+.about .text .s-rating-modal-thanks-btn {
+  padding: 15px 45px;
+  font-size: 18px;
+  border: 1px solid #825DD2;
+  background: #825DD2;
+  border-radius: 30px;
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+}
 @media only screen and (min-width: 1024px) {
   .main-menu .sub-menu .s-rating-modal-thanks-btn {
     padding: 8px 10px 10px;
@@ -3127,7 +3163,28 @@ input[type=radio].sr-only:checked ~ div.s-reviews-testimonial__icon svg {
 .s-reviews-summary-wrapper{width:100%;margin-right:auto;margin-left:auto;padding-right:10px;padding-left:10px}
 @media (min-width: 1280px){
 .s-reviews-summary-wrapper{max-width:1280px}}
-.s-reviews-summary-wrapper{align-items:center}
+.s-reviews-summary-wrapper{align-items:center;
+  width: 80%;
+  margin: 0 auto}
+.hero .s-reviews-summary-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.about .s-reviews-summary-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.stand .s-reviews-summary-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 @media only screen and (min-width: 1024px) {
   .main-menu .sub-menu li.mega-menu .s-reviews-summary-wrapper ul{margin:0px;border-style:none;padding:0px}
   .main-menu .sub-menu li.mega-menu .s-reviews-summary-wrapper > div{display:none}
@@ -4687,6 +4744,207 @@ input[type=radio].sr-only:checked ~ div.radio-images__badge {
 .radio-images input[type=radio]:disabled + label {
   opacity: 0.45;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.hero {
+  position: relative;
+  background: #825DD2;
+  height: 100vh;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100%;
+  background: radial-gradient(circle, #bd9fff, transparent, transparent);
+  z-index: 1;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 1000;
+}
+header nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+header .logo {
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: "Anton", sans-serif;
+}
+header .nav_links {
+  display: flex;
+  gap: 40px;
+}
+header .nav_links a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.hero .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.hero h1 {
+  font-size: 28vw;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 10px;
+  font-family: "Anton", sans-serif;
+}
+#cans {
+  position: absolute;
+  width: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#leaf {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  width: 12%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  z-index: 10;
+}
+#leaf3 {
+  position: absolute;
+  width: 20%;
+  top: 10%;
+  right: 0%;
+}
+#blackberry1 {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 13vw;
+}
+#blackberry2 {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 15vw;
+}
+#blackberry3 {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 6vw;
+}
+/* About */
+.about {
+  padding: 100px 0;
+  height: 100vh;
+}
+.about .container {
+  display: flex;
+  justify-content: space-between;
+}
+.about .text {
+  width: 50%;
+}
+.about .text h2 {
+  font-size: 3.5vw;
+  color: #0d071c;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 20;
+}
+.about .text h2 span {
+  color: #825DD2;
+}
+.about .text .boxs {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.about .text .boxs .box img {
+  width: 25%;
+  rotate: 60deg;
+}
+.about .text .boxs .box h4 {
+  color: #0d071c;
+  margin: 20px 0 10px;
+  font-size: 1.1vw;
+}
+.about .text .boxs .box p {
+  font-size: 0.9vw;
+  color: #4b4b4b;
+}
+.about .text .btn {
+  padding: 15px 45px;
+  font-size: 18px;
+  border: 1px solid #825DD2;
+  background: #825DD2;
+  border-radius: 30px;
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+.stand {
+  height: 85vh;
+  background: #bd9fff;
+  display: flex;
+  justify-content: centere;
+  align-items: center;
+  padding-top: 130px;
+}
+.stand .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.stand img {
+  width: 55%;
+}
+.stand h3 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 26vh;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  color: #6a47b4;
+  letter-spacing: 7px;
+}
 /* Top Nav */
 .top-navbar{display:flex;min-height:48px;padding-top:0.5rem;padding-bottom:0.5rem}
 @media (min-width: 1024px) {
@@ -5392,6 +5650,17 @@ input[type=radio].sr-only:checked ~ div.s-block--slider-with-bg .slider-bg:befor
 .s-block--slider-with-bg .s-slider-block__display-all.light{--tw-border-opacity:1;border-color:rgba(255, 255, 255, 1);border-color:rgba(255, 255, 255, var(--tw-border-opacity, 1));background-color:transparent;--tw-text-opacity:1;color:rgba(255, 255, 255, 1);color:rgba(255, 255, 255, var(--tw-text-opacity, 1))}
 .btn--outline.s-block--slider-with-bg .s-slider-block__display-all{--tw-border-opacity:1;border-color:rgba(255, 255, 255, 1);border-color:rgba(255, 255, 255, var(--tw-border-opacity, 1));background-color:transparent;--tw-text-opacity:1;color:rgba(255, 255, 255, 1);color:rgba(255, 255, 255, var(--tw-text-opacity, 1))}
 .s-block--slider-with-bg .s-slider-block__display-all{border-radius:9999px}
+.about .text .s-block--slider-with-bg .s-slider-block__display-all {
+  padding: 15px 45px;
+  font-size: 18px;
+  border: 1px solid #825DD2;
+  background: #825DD2;
+  border-radius: 30px;
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+}
 @media only screen and (min-width: 1024px) {
   .main-menu .sub-menu .s-block--slider-with-bg .s-slider-block__display-all {
     padding: 8px 10px 10px;
@@ -5610,6 +5879,29 @@ model-viewer[style*=width]:before{display:none}
 .s-comments-product .s-comments-container{width:100%;margin-right:auto;margin-left:auto;padding-right:10px;padding-left:10px}
 @media (min-width: 1280px){
 .s-comments-product .s-comments-container{max-width:1280px}}
+.s-comments-product .s-comments-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.hero .s-comments-product .s-comments-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.about .s-comments-product .s-comments-container {
+  display: flex;
+  justify-content: space-between;
+}
+.stand .s-comments-product .s-comments-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 @media only screen and (min-width: 1024px) {
   .main-menu .sub-menu li.mega-menu .s-comments-product .s-comments-container ul{margin:0px;border-style:none;padding:0px}
   .main-menu .sub-menu li.mega-menu .s-comments-product .s-comments-container > div{display:none}
@@ -6453,7 +6745,6 @@ lite-youtube.lyt-activated > .lty-playbtn {
 .lg\:-mt-28{margin-top:-7rem}
 .lg\:mb-24{margin-bottom:6rem}
 .lg\:mb-8{margin-bottom:2rem}
-.lg\:ml-auto{margin-left:auto}
 .lg\:mt-12{margin-top:3rem}
 .lg\:\!block{display:block !important}
 .lg\:block{display:block}
